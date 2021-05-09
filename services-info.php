@@ -37,7 +37,7 @@
   </div>
  </div> 
 
-  <div class="project-info flex-row" style="padding:20px;">
+  <div class="project-info flex-row">
     <div class="main-bar">
       <div class="project-single">
         
