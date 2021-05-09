@@ -40,7 +40,7 @@
     <div class="main-bar">
       <div class="project-single">
         <div class="project-image">
-          <img src="/admin/assets/images/"  style="width:100%; height:500px;">
+          <img src="<?php echo BASE_URL . "/admin/assets/images/" . $project["image"];?>"  style="width:100%; height:500px;">
         </div>
         <div class="project-description" style="font-size:20px;">
           <table>
