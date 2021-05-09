@@ -1,0 +1,353 @@
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+	height:100%;
+	padding:0px;
+	margin:0px;
+	background:#f6f6f6;
+	font-family:'Lora',cursive;
+}
+
+.msg{
+	width:100%;
+	margin:5px auto;
+	padding:8px;
+	border-radius:5px;
+	list-style:none;
+}
+
+.success{
+	color:#3a6e3a;
+	border:1px solid #3a6e3a;
+	background:#bcf5bc;
+}
+
+.error{
+	color:#884b4b;
+	border:1px solid #884b4b;
+	background:#f5bcbc;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family:'Candal',cursive;
+	color:#444;
+	margin:5px;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+ 
+.clear-fix::after{
+	content:"";
+	display:block;
+	clear:both; 
+}
+
+.center-div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.btn{
+	padding:.5rem 1rem;
+	background:#006669;
+	color:white;
+	border:1px solid transparent;
+	border-radius:.25rem; 
+	font-size:1.08;
+	font-family:"Lora",cursive; 
+}
+
+.btn-big{
+	padding:.7rem 1.3rem;
+	line-height:1.3rem;
+}
+
+.btn:hover {
+	color:white !important; 
+	background:#005255;
+ }
+
+ .text-input {
+ 	padding:.7rem;
+ 	display:block;
+ 	width:100%;
+ 	border-radius:5px;
+ 	border:1px solid gray;
+ 	outline:none;
+ 	color: green;
+ 	line-height:1.7rem;
+ 	font-size:1.25rem;
+ 	font-family:Lora,cursive;
+ }
+
+header{
+	background-color:#008489;
+    overflow:hidden;
+    max-height:66px;
+} 
+
+.display{
+    max-height:1000px;
+}
+
+header * {
+	color:white;
+}
+
+header .logo{
+	float:left;
+	height:66px;
+	margin-left:2em;
+}
+
+header .logo-text {
+	margin:9px;
+	font-family:'Candal',cursive;
+}
+
+header .logo-text span{
+	color:#05f7ff;
+}
+
+header ul{
+    float:right;
+    margin:0px;
+    padding:0px; 
+    list-style-type:none;
+}
+
+header ul li{
+	float:left;
+}
+
+header ul li ul{
+	position:absolute;
+	top:66px;
+	right:0px;
+	width:180px;
+	display:none;
+	z-index:8888;
+}
+
+header ul li:hover ul{
+	display:block;
+}
+
+header ul li i.fa-chevron-down{
+	font-size:.8rem;
+}
+
+header ul li ul li{
+	width:100%;
+}
+
+header ul li ul li a{
+	padding:10px;
+	color:gray;
+}
+
+header ul li ul li a.logout{
+	color:red;
+}
+
+
+header ul li a{
+	display:block;
+	padding:21px;
+	font-size:1.1rem;
+	text-decoration:none;
+}
+
+header ul li a:hover{
+	background: #006669;
+	transition: 0.5s;
+}
+	
+header .menu-toggle{
+	display:none;
+}
+
+.page-wrapper{
+	min-height:100%;
+	margin-top:20px;
+}
+
+.page-wrapper a:hover{
+   color:#000666;
+}
+
+header{
+	background-color:#01474a;
+}
+
+.admin-wrapper{
+	display:flex;
+	height:calc(100% - 66px);
+	
+}
+
+.admin-wrapper .left-slidebar{
+	flex:2;
+	height:100%;
+	background:#234a57;
+}
+
+.admin-wrapper .left-slidebar ul{
+	list-style:none;
+	margin:0px;
+	padding:0px; 
+	color:aliceblue;
+}
+
+.admin-wrapper .left-slidebar ul li a{ 
+	padding:18px; 
+	display:block;
+	border-bottom: 1px solid #004044;
+}
+
+.admin-wrapper .left-slidebar ul li a:hover{ 
+	background:#004044;
+}
+
+
+.admin-wrapper .admin-content{
+	flex:8;
+	height:100%;
+	padding:40px 100px 100px;
+	overflow-y:scroll;
+}
+
+.admin-content .page-tittle{
+   text-align:center;
+   margin-top:20px;
+   margin-bottom:1.5rem;
+}
+
+table{
+	width:100%;
+	border-collapse:collapse;
+	font-size:1.1rem; 
+}
+
+th, td {
+	padding:15px;
+	text-align:left;
+	border-bottom:1px solid #d3d3d3;
+}
+
+.edit{
+    color:green;
+}
+.delete{
+    color:red;
+}
+.publish{
+    color:blue;
+}
+
+.edit:hover,
+.delete:hover,
+.publish:hover{
+    text-decoration:underline; 
+}
+
+form div{
+	margin-bottom:16px;
+}
+
+/*Auth pages*/
+
+.auth-content{
+  width:40%;
+  margin:50px auto;
+  padding:20px;
+  background:white;
+  border-radius:5px;
+  border:1px solid black;
+}
+
+.auth-content .form-tittle{
+    text-align:center;
+    margin:20px;
+}
+
+.auth-content form div{
+  margin-bottom:10px;
+}
+
+.auth-content form  button{
+  width:100%;
+}
+
+
+@media only screen and  (max-width:750px){
+
+
+
+    header{
+    	position:relative;
+    }
+	header ul{
+		width:100%;
+		background:#0E94A0;
+	}
+
+	header ul li{
+		width: 100%;
+	}
+
+	header ul li ul{
+		position:static;
+		display:block;
+		width:100%; 
+	}
+
+	header ul li ul li a{
+	    padding:10px;
+	    background:#0E94A0;
+	    color:white;
+	    padding-left:50px;
+    }
+
+    header ul li ul li a.logout{
+	    color:red;
+    }
+
+    header .menu-toggle{
+    	position:absolute;
+	    display:block;
+	    right:20px;
+	    top:20px;
+	    font-size:1.9rem;
+    }
+
+    header .logo{
+		margin-left:.5em;
+	    }
+
+	.admin-wrapper .admin-content{
+	padding:40px 10px 10px;
+}
+
+	.admin-wrapper .admin-content .button-group{
+	display:flex;
+}
+
+	.admin-wrapper .admin-content .button-group .btn{
+	margin-left:10px;
+	flex:8;
+}
+
+}

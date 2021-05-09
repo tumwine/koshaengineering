@@ -1,0 +1,18 @@
+/*------Patua One font-family--------*/
+@font-face{
+    font-family:Patua_One;
+    src:url(../fonts/Patua_One/PatuaOne-Regular.ttf);
+}
+
+/*------Nunito font-family--------*/
+@font-face{
+    font-family:Nunito;
+    src:url(../fonts/Nunito/Nunito-Light.ttf);
+}
+
+/*------Titillium_Web font-family--------*/
+@font-face{
+    font-family:Titillium_Web;
+    src:url(../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+}
+
