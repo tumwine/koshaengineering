@@ -1,9 +1,9 @@
 <?php
 
-$host = "frwahxxknm9kwy6c.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$user = "ifinzti6izhcdvuft";
-$pass = "lk3i92t824ynskd1";
-$db_name ="xd2qzki57tr4ghm0";
+$host = "y5svr1t2r5xudqeq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$user = "p0gjwr3u733ssxe0";
+$pass = "xwguz2m7u4qvux83";
+$db_name ="sv2waxv7b9cokxkb";
 
 $conn = new MySQLi($host,$user,$pass,$db_name);
 
